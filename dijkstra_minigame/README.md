@@ -4,7 +4,7 @@ This is my first time creating a simple game in Java, utilizing Object Oriented 
 and implementing both path traversal and dijkstra algorithm to handle user input logic as well as path recording and calculations.
 
 # How to play the minigame?
-The goal in this minigame is get from point (start) to (finish) by discovering the shortest paths for each step.
+The goal in this minigame is to get from point (start) to (finish) by discovering the shortest paths for each step.
 For each and every step, you have to choose one path with a shorter distance (weight) compared to the other paths in order to reach the goal.
 
 # What happens when we find or don't find the shortest path?
