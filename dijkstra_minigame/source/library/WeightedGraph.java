@@ -1,22 +1,33 @@
 package library;
 import java.util.*;
 
+
+// Class to represent a vertex as part of the graph
+class MyVertex {
+    String nodeName; // The name of the vertex
+
+    MyVertex(String name) {
+        this.nodeName = name;
+    }
+
+    @Override
+    public String toString() {
+        return nodeName;
+    }
+}
+
 // Class to represent an edge in the graph
 class Edge<T> {
     T neighbor; // The vertex that this edge connects to
     float weight; // The weight of the edge
     String label; // The label for the edge
 
-    // Constructor, initializes the neighbor, weight, and label
-    // Time complexity: O(1)
-    // Space complexity: O(1)
     public Edge(T v, float w, String l) {
         this.neighbor = v;
         this.weight = w;
         this.label = l;
     }
 
-    // Override toString method to provide a string representation of the edge
     @Override
     public String toString() {
         return "(" + neighbor + ", " + label + ")";

@@ -1,18 +1,6 @@
 import java.util.*;
 import library.WeightedGraph;
 
-class MyVertex {
-    String nodeName;
-
-    MyVertex(String name) {
-        this.nodeName = name;
-    }
-
-    @Override
-    public String toString() {
-        return nodeName;
-    }
-}
 
 public class MainProgram {
     public static void main(String[] args) {
@@ -29,18 +17,19 @@ public class MainProgram {
         Scanner scan = new Scanner(System.in);
 
         // Add edges to the graph
-        WG.addEdge(v1, v2, 4.0f, "4.0");
-        WG.addEdge(v1, v3, 6.0f, "6.0");
-        WG.addEdge(v2, v3, 3.0f, "3.0");
-        WG.addEdge(v2, v4, 2.0f, "2.0");
-        WG.addEdge(v4, v5, 4.0f, "4.0");
-        WG.addEdge(v5, v3, 2.0f, "2.0");
-        WG.addEdge(v4, v6, 2.0f, "2.0");
-        WG.addEdge(v5, v6, 1.0f, "1.0");
+        WG.addEdge(v1, v2, 4.0f, "2 + 2");
+        WG.addEdge(v1, v3, 6.0f, "5 + 1");
+        WG.addEdge(v2, v3, 3.0f, "3");
+        WG.addEdge(v2, v4, 2.0f, "1 + 1");
+        WG.addEdge(v3, v6, 2.0f, "2");
+        WG.addEdge(v4, v5, 4.0f, "2 + 2");
+        WG.addEdge(v5, v3, 2.0f, "2");
+        WG.addEdge(v4, v6, 2.0f, "2");
+        WG.addEdge(v5, v6, 1.0f, "1");
 
         boolean n = true;
         while (n) {
-            // Print the graph
+            // The graph visualization
             System.out.println("Dijkstra Minigame Map:");
             WG.printGraph();
             System.out.println("\nFind the shortest path to " + v6);
