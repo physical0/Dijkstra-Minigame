@@ -1,4 +1,4 @@
-Hi there! Welcome to my Dijkstra Minigame Final Test Project. 
+Hi there, i'm physical0! Welcome to my Dijkstra Minigame Final Test Project. 
 
 This is my first time creating a simple game in Java, utilizing Object Oriented Programming to create graphs, 
 and implementing both path traversal and dijkstra algorithm to handle user input logic as well as path recording and calculations.
